@@ -15,7 +15,7 @@ spec:
         app: pythonwebservice
     spec:
       containers:
-      - image: sunishsurendrank/python_web_service:{{.Values.pythonwebserviceTag}}
+      - image: sunishsurendrank/python_web_service:{{.Versions.pythonwebserviceTag}}
         name: pythonwebservice
         ports:
         - containerPort: 5000
