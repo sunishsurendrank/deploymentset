@@ -15,7 +15,7 @@ spec:
         app: gowebservice
     spec:
       containers:
-      - image: sunishsurendrank/go_web_service:{{.Versions.gowebserviceTag}}
+      - image: sunishsurendrank/go_web_service:{{.Values.gowebserviceTag}}
         name: gowebservice
         ports:
         - containerPort: 9090

@@ -15,7 +15,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: sunishsurendrank/frontend:{{.Versions.frontendTag}}
+      - image: sunishsurendrank/frontend:{{.Values.frontendTag}}
         name: frontend
         ports:
         - containerPort: 80
